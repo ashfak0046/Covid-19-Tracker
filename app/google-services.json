@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "541672187919",
+    "project_id": "covid-19-tracker2-ff9cc",
+    "storage_bucket": "covid-19-tracker2-ff9cc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:541672187919:android:c1afada760c115d379db7a",
+        "android_client_info": {
+          "package_name": "com.developer.arsltech.covid_19tracker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "541672187919-g0cf309evjb1sc81vvghr5uuahgrprtr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC2uPvkU-Z8w1pSHM6XqFKKFagcI7vx2IY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "541672187919-g0cf309evjb1sc81vvghr5uuahgrprtr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

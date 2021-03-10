@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".Survey">
+
+    <EditText
+        android:layout_marginTop="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:id="@+id/nameEditTextId"
+        android:hint="Enter Your Name"/>
+
+    <EditText
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:id="@+id/ageEditTextId"
+        android:hint="Enter Your Age"/>
+    <EditText
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:id="@+id/covidEditTextId"
+        android:hint="ARE YOU A COVID PATIENT(YES/NO)"/>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:id="@+id/SaveDataButtonId"
+        android:text="Save Data"
+        android:textSize="20sp"
+        style="@style/TextAppearance.AppCompat.Widget.Button.Colored"
+        android:background="@drawable/button_bg"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:id="@+id/LoadDataButtonId"
+        android:text="Load Data"
+        android:textSize="20sp"
+        style="@style/TextAppearance.AppCompat.Widget.Button.Colored"
+        android:background="@drawable/button_bg"/>
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>
