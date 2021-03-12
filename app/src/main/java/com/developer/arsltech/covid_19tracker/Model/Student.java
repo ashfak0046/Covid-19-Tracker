@@ -1,4 +1,4 @@
-package com.developer.arsltech.covid_19tracker;
+package com.developer.arsltech.covid_19tracker.Model;
 
 public class Student {
 
@@ -6,11 +6,11 @@ public class Student {
     private String age;
     private String covid;
 
-    public  Student(){
+    public Student() {
 
     }
 
-    public Student(String name, String age,String covid) {
+    public Student(String name, String age, String covid) {
         this.name = name;
         this.age = age;
         this.covid = covid;

@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">COVID-19 Tracker</string>
     <string name="submit">SUBMIT</string>
+    <string name="covid_positive_no">Covid Positive: No</string>
+    <string name="age_22">Age: 22</string>
+    <string name="name_ashfak_mahbub">Name: Ashfak Mahbub</string>
 </resources>

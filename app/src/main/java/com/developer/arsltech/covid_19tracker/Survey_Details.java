@@ -3,9 +3,12 @@ package com.developer.arsltech.covid_19tracker;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.widget.AdapterView;
 import android.widget.ListView;
 
+import com.developer.arsltech.covid_19tracker.Model.Student;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -28,32 +31,35 @@ public class Survey_Details extends AppCompatActivity {
         setContentView(R.layout.activity_survey__details);
         listView = findViewById(R.id.listViewId);
 
-        databaseReference = FirebaseDatabase.getInstance().getReference("Covid Summary");
+        databaseReference = FirebaseDatabase.getInstance().getReference("Covid_Summary");
         studentList = new ArrayList<>();
 
-        customAdapter = new CustomAdapter(Survey_Details.this,studentList);
+        customAdapter = new CustomAdapter(Survey_Details.this, studentList);
+
 
     }
 
-    @Override
     protected void onStart() {
 
         databaseReference.addValueEventListener(new ValueEventListener() {
             @Override
-            public void onDataChange(@NonNull DataSnapshot snapshot) {
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 studentList.clear();
-               for(DataSnapshot dataSnapshot1 : snapshot.getChildren()){
+                for(DataSnapshot dataSnapshot1 : dataSnapshot.getChildren())
+                {
                     Student student = dataSnapshot1.getValue(Student.class);
                     studentList.add(student);
-               }
-               listView.setAdapter(customAdapter);
+                }
+                listView.setAdapter(customAdapter);
             }
 
             @Override
             public void onCancelled(@NonNull DatabaseError error) {
 
             }
+
         });
         super.onStart();
     }
-}
+    }
+

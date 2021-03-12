@@ -8,21 +8,21 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Name: Ashfak Mahbub"
+        android:text="@string/name_ashfak_mahbub"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:layout_marginTop="5dp"
         android:id="@+id/nameTextViewID"/>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Age: 22"
+        android:text="@string/age_22"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:layout_marginTop="5dp"
         android:id="@+id/ageTextViewID"/>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Covid Positive: No"
+        android:text="@string/covid_positive_no"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:layout_marginTop="5dp"
         android:id="@+id/covidTextViewID"/>

@@ -10,7 +10,7 @@
     tools:context=".Survey">
 
     <EditText
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="30dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
@@ -37,8 +37,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:id="@+id/SaveDataButtonId"
         android:text="Save Data"
@@ -48,22 +48,15 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:id="@+id/LoadDataButtonId"
-        android:text="Load Data"
+        android:text="Survey Summary"
         android:textSize="20sp"
         style="@style/TextAppearance.AppCompat.Widget.Button.Colored"
         android:background="@drawable/button_bg"/>
-
-
-
-
-
-
-
 
 
 
