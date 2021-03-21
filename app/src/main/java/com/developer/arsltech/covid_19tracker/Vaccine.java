@@ -19,7 +19,9 @@ public class Vaccine extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_vaccine);
-        //getSupportActionBar().hide();
+        getSupportActionBar().setTitle("Vaccine Registration");
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
         swip = (SwipeRefreshLayout)findViewById(R.id.swipe);
         swip.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
             @Override
@@ -29,7 +31,15 @@ public class Vaccine extends AppCompatActivity {
         });
         load();
 
-
+    }
+    @Override
+    public void onBackPressed() {
+        if(mywebview.canGoBack()){
+            mywebview.goBack();
+        }
+        else{
+            finish();
+        }
     }
     public void load() {
         mywebview = findViewById(R.id.WebView);

@@ -4,4 +4,9 @@
     <string name="covid_positive_no">Covid Positive: No</string>
     <string name="age_22">Age: 22</string>
     <string name="name_ashfak_mahbub">Name: Ashfak Mahbub</string>
+    <string name="invalid_name">Please Enter Your Name</string>
+    <string name="invalid_age">Please Enter Your Age</string>
+    <string name="invalid_city">Please Enter Your City Name</string>
+    <string name="invalid_covid">Yes or No</string>
+    <string name="invalid_family_covid">Yes or No</string>
 </resources>

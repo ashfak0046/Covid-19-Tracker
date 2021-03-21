@@ -33,10 +33,14 @@ public class CustomAdapter extends ArrayAdapter<Student> {
         Student student = studentList.get(position);
         TextView t1 = view.findViewById(R.id.nameTextViewID);
         TextView t2 = view.findViewById(R.id.ageTextViewID);
-        TextView t3 = view.findViewById(R.id.covidTextViewID);
+        TextView t3 = view.findViewById(R.id.cityTextViewId);
+        TextView t4 = view.findViewById(R.id.covidTextViewID);
+        TextView t5 = view.findViewById(R.id.familyTextViewId);
         t1.setText("Name: " + student.getName());
         t2.setText("Age: " + student.getAge());
-        t3.setText("Covid Positive: " + student.getCovid());
+        t3.setText("City: "+student.getCity());
+        t4.setText("Covid Positive: " + student.getCovid());
+        t5.setText("Covid Patient In Family: "+student.getFamily());
 
         return view;
     }

@@ -11,7 +11,7 @@
 
 
     <ListView
-        android:listSelector="@color/colorGreen"
+        android:listSelector="@color/cases"
         android:dividerHeight="2dp"
         android:divider="@color/colorPrimaryDark"
         android:id="@+id/listViewId"

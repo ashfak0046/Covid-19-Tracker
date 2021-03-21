@@ -19,7 +19,9 @@ public class Covid extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_covid);
-        //getSupportActionBar().hide();
+        getSupportActionBar().setTitle("About Covid-19");
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
         swip = (SwipeRefreshLayout)findViewById(R.id.swipe);
         swip.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
             @Override
@@ -29,8 +31,18 @@ public class Covid extends AppCompatActivity {
         });
         load();
 
-
     }
+
+    @Override
+    public void onBackPressed() {
+       if(mywebview.canGoBack()){
+           mywebview.goBack();
+       }
+       else{
+           finish();
+       }
+    }
+
     public void load() {
         mywebview = findViewById(R.id.WebView);
         mywebview.loadUrl("https://www.unicef.org/bangladesh/en/coronavirus-disease-covid-19-information-centre");

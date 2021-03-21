@@ -12,6 +12,8 @@
     <EditText
         android:layout_marginTop="30dp"
         android:layout_width="match_parent"
+        android:inputType="text"
+        android:textSize="20sp"
         android:layout_height="wrap_content"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:id="@+id/nameEditTextId"
@@ -21,18 +23,39 @@
         android:layout_marginTop="15dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:inputType="number"
+        android:textSize="20sp"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:id="@+id/ageEditTextId"
         android:hint="Enter Your Age"/>
     <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:inputType="text"
+        android:textSize="20sp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:hint="Enter Your City Name"
+        android:id="@+id/cityEditTextId"/>
+    <EditText
         android:layout_marginTop="15dp"
         android:layout_width="match_parent"
+        android:inputType="text"
+        android:textSize="20sp"
         android:layout_height="wrap_content"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:id="@+id/covidEditTextId"
-        android:hint="ARE YOU A COVID PATIENT(YES/NO)"/>
+        android:hint="Are You a Covid Patient(Yes/No)"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:textSize="20sp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:hint="Is There Any Covid Patient In Your Family(Yes/No)"
+        android:id="@+id/familyEditTextId">
 
-
+    </EditText>
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -57,7 +80,4 @@
         android:textSize="20sp"
         style="@style/TextAppearance.AppCompat.Widget.Button.Colored"
         android:background="@drawable/button_bg"/>
-
-
-
 </LinearLayout>

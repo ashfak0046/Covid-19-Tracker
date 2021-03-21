@@ -29,6 +29,9 @@ public class Survey_Details extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_survey__details);
+        getSupportActionBar().setTitle("Survey Summary");
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
         listView = findViewById(R.id.listViewId);
 
         databaseReference = FirebaseDatabase.getInstance().getReference("Covid_Summary");
