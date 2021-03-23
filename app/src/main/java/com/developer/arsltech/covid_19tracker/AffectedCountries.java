@@ -85,8 +85,6 @@ public class AffectedCountries extends AppCompatActivity {
         });
     }
 
-
-
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         if(item.getItemId()==android.R.id.home)
@@ -136,10 +134,6 @@ public class AffectedCountries extends AppCompatActivity {
                                 simpleArcLoader.setVisibility(View.GONE);
 
 
-
-
-
-
                         } catch (JSONException e) {
                             e.printStackTrace();
                             simpleArcLoader.stop();
@@ -162,5 +156,6 @@ public class AffectedCountries extends AppCompatActivity {
 
 
     }
+
 
 }

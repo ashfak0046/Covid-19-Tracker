@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.widget.AdapterView;
 import android.widget.ListView;
 
@@ -29,12 +30,12 @@ public class Survey_Details extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_survey__details);
-        getSupportActionBar().setTitle("Survey Summary");
+        getSupportActionBar().setTitle("Survey Details");
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
         listView = findViewById(R.id.listViewId);
 
-        databaseReference = FirebaseDatabase.getInstance().getReference("Covid_Summary");
+        databaseReference = FirebaseDatabase.getInstance().getReference("Covid_Details");
         studentList = new ArrayList<>();
 
         customAdapter = new CustomAdapter(Survey_Details.this, studentList);
@@ -64,5 +65,12 @@ public class Survey_Details extends AppCompatActivity {
         });
         super.onStart();
     }
+    ////
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        if(item.getItemId()==android.R.id.home)
+            finish();
+        return super.onOptionsItemSelected(item);
     }
+}
 

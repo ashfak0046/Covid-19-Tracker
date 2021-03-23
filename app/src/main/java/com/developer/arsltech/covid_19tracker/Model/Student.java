@@ -5,18 +5,18 @@ public class Student {
     private String name;
     private String age;
     private String covid;
-    private String city;
+//    private String city;
     private String family;
 
     public Student() {
 
     }
 
-    public Student(String name, String age, String covid, String city, String family) {
+    public Student(String name, String age, String covid, String family) {
         this.name = name;
         this.age = age;
         this.covid = covid;
-        this.city = city;
+//        this.city = city;
         this.family = family;
     }
 
@@ -40,17 +40,15 @@ public class Student {
         return covid;
     }
 
-    public void setCovid(String covid) {
-        this.covid = covid;
-    }
-
-    public String getCity() {
-        return city;
-    }
-
-    public void setCity(String city) {
-        this.city = city;
-    }
+    public void setCovid(String covid) { this.covid = covid; }
+//
+//    public String getCity() {
+//        return city;
+//    }
+//
+//    public void setCity(String city) {
+//        this.city = city;
+//    }
 
     public String getFamily() {
         return family;

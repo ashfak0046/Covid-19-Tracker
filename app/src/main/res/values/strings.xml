@@ -9,4 +9,10 @@
     <string name="invalid_city">Please Enter Your City Name</string>
     <string name="invalid_covid">Yes or No</string>
     <string name="invalid_family_covid">Yes or No</string>
+    <string name="survey_summary">Survey Details</string>
+    <string name="save_data">Save Data</string>
+    <string name="invalid_covid_yes">Yes or No</string>
+    <string name="invalid_covid_no">Yes or No</string>
+    <string name="invalid_covid_family_yes">Yes</string>
+    <string name="invalid_covid_family_no">No</string>
 </resources>

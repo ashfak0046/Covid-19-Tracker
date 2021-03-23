@@ -28,34 +28,101 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:id="@+id/ageEditTextId"
         android:hint="Enter Your Age"/>
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        android:inputType="text"
-        android:textSize="20sp"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        android:hint="Enter Your City Name"
-        android:id="@+id/cityEditTextId"/>
-    <EditText
-        android:layout_marginTop="15dp"
-        android:layout_width="match_parent"
-        android:inputType="text"
-        android:textSize="20sp"
-        android:layout_height="wrap_content"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        android:id="@+id/covidEditTextId"
-        android:hint="Are You a Covid Patient(Yes/No)"/>
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        android:textSize="20sp"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        android:hint="Is There Any Covid Patient In Your Family(Yes/No)"
-        android:id="@+id/familyEditTextId">
 
-    </EditText>
+<!--    <EditText-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="15dp"-->
+<!--        android:inputType="text"-->
+<!--        android:textSize="20sp"-->
+<!--        android:textAppearance="@style/TextAppearance.AppCompat.Large"-->
+<!--        android:hint="Enter Your City Name"-->
+<!--        android:id="@+id/cityEditTextId"/>-->
+<!--    <TextView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="5dp"-->
+<!--        android:textSize="20sp"-->
+<!--        android:text = "Select Your City"/>-->
+<!--    <AutoCompleteTextView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:enabled="false"-->
+<!--        android:inputType="none"-->
+<!--        android:textColor="#000"/>-->
+<!--    <EditText-->
+<!--        android:layout_marginTop="15dp"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:inputType="text"-->
+<!--        android:textSize="20sp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:textAppearance="@style/TextAppearance.AppCompat.Large"-->
+<!--        android:id="@+id/covidEditTextId"-->
+<!--        android:hint="Are You a Covid Patient(Yes/No)"/>-->
+<!--    <EditText-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="15dp"-->
+<!--        android:textSize="20sp"-->
+<!--        android:textAppearance="@style/TextAppearance.AppCompat.Large"-->
+<!--        android:hint="Is There Any Covid Patient In Your Family(Yes/No)"-->
+<!--        android:id="@+id/familyEditTextId">-->
+
+<!--    </EditText>-->
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Are You a Covid Patient"
+            android:textSize="20sp"/>
+<!--            android:textColor="@color/colorPrimaryDark"/>-->
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/CovidYesEditRadioID"
+            android:text="Yes"
+            android:layout_marginTop="5dp"
+            android:textSize="20sp">
+        </RadioButton>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No"
+            android:layout_marginTop="5dp"
+            android:id="@+id/CovidNoEditRadioID"
+            android:textSize="20sp">
+        </RadioButton>
+    </RadioGroup>
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Is There Any Covid Patient In Your House"
+            android:textSize="20sp"/>
+<!--            android:textColor="@color/colorPrimaryDark"/>-->
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yes"
+            android:layout_marginTop="5dp"
+            android:id="@+id/CovidFamilyYesEditRadioID"
+            android:textSize="20sp">
+        </RadioButton>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No"
+            android:layout_marginTop="5dp"
+            android:id="@+id/CovidFamilyNoEditRadioID"
+            android:textSize="20sp">
+        </RadioButton>
+    </RadioGroup>
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -64,7 +131,7 @@
         android:layout_marginRight="10dp"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:id="@+id/SaveDataButtonId"
-        android:text="Save Data"
+        android:text="@string/save_data"
         android:textSize="20sp"
         style="@style/TextAppearance.AppCompat.Widget.Button.Colored"
         android:background="@drawable/button_bg"/>
@@ -76,7 +143,7 @@
         android:layout_marginRight="10dp"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:id="@+id/LoadDataButtonId"
-        android:text="Survey Summary"
+        android:text="@string/survey_summary"
         android:textSize="20sp"
         style="@style/TextAppearance.AppCompat.Widget.Button.Colored"
         android:background="@drawable/button_bg"/>
